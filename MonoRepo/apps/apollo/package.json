@@ -1,0 +1,29 @@
+{
+  "name": "pearlverse-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "tsc -p .",
+    "dev": "tsc-watch --onSuccess \"npm start\""
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.2",
+    "@prisma/client": "^6.1.0",
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "graphql": "^16.10.0",
+    "ioredis": "^5.4.2",
+    "jose": "^5.9.6",
+    "prisma": "^6.1.0",
+    "tsc-watch": "^6.2.1"
+  }
+}
